@@ -46,6 +46,7 @@ jobs:
             --platform=managed \
             --port=8501 \
             --allow-unauthenticated \
+             --timeout=1000s \
             --set-env-vars "DB_USER=${{ secrets.DB_USER }},DB_PASSWORD=${{ secrets.DB_PASSWORD }},DB_HOST=${{ secrets.DB_HOST }},DB_PORT=${{ secrets.DB_PORT }},DB_NAME=${{ secrets.DB_NAME }}",STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
 
       # 🔹 Mostrar a URL do serviço
