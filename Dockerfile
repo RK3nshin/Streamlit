@@ -10,7 +10,7 @@ RUN pip install --no-cache-dir --upgrade pip \
 
 COPY . /app
 
-EXPOSE 8501
+EXPOSE 8080
 
 # Comando para rodar a aplicação
 CMD ["streamlit", "run", "app/stream.py", "--server.port=8501", "--server.address=0.0.0.0"]
